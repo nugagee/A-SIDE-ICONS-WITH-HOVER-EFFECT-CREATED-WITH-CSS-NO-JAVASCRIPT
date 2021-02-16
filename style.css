@@ -1,0 +1,120 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("/image/back.jpg") no-repeat center / cover;
+  text-align: center;
+  color: white;
+}
+.nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.nav .menu img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.section {
+  max-width: 70%;
+  margin: 100px auto 0;
+}
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+.section p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  font-size: 1.2rem;
+}
+.section .btn {
+  padding: 10px 15px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section .btn:hover {
+  background: white;
+  color: rgb(7, 52, 7);
+}
+.container .side-bar {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  background: white;
+  border-radius: 5px;
+  height: 350px;
+  width: 60px;
+  transform: scale(0.8);
+}
+.side-bar .icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+  margin: 7px auto;
+}
+
+.icon .fa {
+  height: 50px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  transition: 0.3s;
+}
+.side-bar .icon-box:hover .icon {
+  background: red;
+  border-radius: 5px;
+  color: white;
+}
+.icon-box .side-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  border-radius: 0 5px 5px 0;
+  line-height: 0;
+  color: rgb(255, 255, 255);
+  max-width: 0px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.side-bar .icon-box:hover .side-text {
+  max-width: 140px;
+  margin-left: 5px;
+  height: 100%;
+  padding: 0 50px;
+}
+
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 3rem;
+  }
+  .container .side-bar {
+    transform: scale(0.6);
+    left: 5px;
+  }
+}
